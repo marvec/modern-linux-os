@@ -1,0 +1,153 @@
+body {
+	background-color: #cd0000;
+	color: #000;
+	font-family: overpassregular;
+	padding: 0;
+	margin: 0;
+	text-align: justify;
+}
+
+h1 {
+	color: #646464;
+}
+
+#logo h1 {
+	color: #fff;
+	background-image: url('../img/mlos-logo.png');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: left middle;
+	min-height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	padding-left: 70px;
+}
+
+#logo {
+	margin: 3em 0 3em 0;
+	padding: 1em 2em;
+	background-color: #000;
+	color: #fff;
+	font-family: overpassbold;
+}
+
+#content {
+	margin: 3em;
+	background-color: #fff;
+	padding: 3em;
+}
+
+#footer {
+	text-align: center;
+	margin: 1em;
+	font-family: overpassbold;
+	color: #fff;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.red {
+	background-color: #cd0000;	
+}
+
+.grey {
+	background-color: #646464;
+}
+
+.button {
+	border-radius: 25px;
+	margin: 1em;
+	padding: 1em;
+	font-family: overpassbold;
+	color: #fff;
+}
+
+.center-margin {
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+[class*="col"] p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+[class*="col"] hr {
+	width: 95%;
+}
+
+.col1 {
+	width: 10%;
+	float: left;
+	position: relative;
+}
+
+.col2 {
+	width: 20%;
+	float: left;
+	position: relative;
+}
+
+.col25 {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.col3 {
+	width: 30%;
+	float: left;
+	position: relative;
+}
+
+.col4 {
+	width: 40%;
+	float: left;
+	position: relative;
+}
+
+.col5 {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.col6 {
+	width: 60%;
+	float: left;
+	position: relative;
+}
+
+.col7 {
+	width: 70%;
+	float: left;
+	position: relative;
+}
+
+.col8 {
+	width: 80%;
+	float: left;
+	position: relative;
+}
+
+.col9 {
+	width: 90%;
+	float: left;
+	position: relative;
+}
+
+.col10 {
+	width: 100%;
+	float: left;
+	position: relative;
+}
