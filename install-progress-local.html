@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Modern Linux-based Operating System</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/main.css">
+  	<link rel="stylesheet" href="css/progress.css">
+  	<link rel="stylesheet" href="font/overpass-regular.css">
+  	<link rel="stylesheet" href="font/overpass-bold.css">
+  	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+  </head>
+  <body>
+    <div id="logo">
+      <h1>Modern Linux-based Operating System 8.1</h1>
+    </div>
+    <div id="content">
+      <div class="right center" style="width: 15%;">
+        For remote connection, use the following code:
+        <div class="button center-margin red"><i class="fa fa-plug"></i> cd6jf89</div>
+      </div>
+      <h1><i class="fa fa-hdd-o"></i> Modern Linux-based Operating System Installation</h1>
+      <p>The installation is in progress. It usualy takes around 5-10 minutes. Please be patient. Your system will be ready in a while.</p>
+      <br clear="all"/>
+      <div class="row">
+        <div class="progress">
+  				<div id="bar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+    				0%
+  				</div>
+				</div>
+				<div id="complete">
+					<p>Installation completed.</p>
+					<p><i class="fa fa-plug"></i> Root password is: <strong>cd6jf89</strong></p>
+				</div>
+      </div>
+    </div>
+    <div id="footer">
+      &copy; Copyright by Modern Linux-based Operating System Company inc.
+    </div>
+    <script type="text/javascript">
+			$(function() {
+				$("#complete").hide();
+			  var pGress = setInterval(function() {
+	        var pVal = $('#bar').attr("aria-valuenow");
+	        var pCnt = !isNaN(pVal) ? (parseInt(pVal) + 1) : 1;
+	        if (pCnt > 100) {
+	            clearInterval(pGress);
+	            $("#bar").attr("class", "progress-bar progress-bar-striped");
+	            $("#bar").html("Installation complete.");
+	            $("#complete").show();
+	        } else {
+		    	  $("#bar").attr("aria-valuenow", "" + pCnt);
+		    	  $("#bar").attr("style", "width:" + pCnt + "%");
+		    	  $("#bar").html(pCnt + "%");
+	        }
+        }, 100);
+	    });
+			/*for (var i = 0; i <= 100; i++) {
+    	  $("#bar").attr("aria-valuenow", "" + i);
+    	  $("#bar").attr("style", "width:" + i + "%");
+    	  $("#bar").html(i + "%");
+    	  $("body").delay(100);
+      }*/
+
+    </script>
+  </body>
+</html>
